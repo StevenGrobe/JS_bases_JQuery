@@ -1,49 +1,5 @@
 # La manipulation du DOM avec Jquery.
 
-Maintenant que nous avons appris les bases de Javascript, nous allons pouvoir rendre dynamiques nos pages web.
-Javascript a été crée dans ce but, si vous voulez en savoir un peu plus sur son histoire la [page wikipédia](https://en.wikipedia.org/wiki/JavaScript) vous apprendra notamment qu'il existe depuis 1995 ! Une belle longévité pour un langage du Web, et croyez-moi Javascript (incluant les différentes version et les évolutions) a encore de beaux jours devant lui.
-
-Pour manipuler le DOM ( Document Object Model, on en apprendra plus bientôt sur ce que c'est ), on a plusieurs possibilités :
-
-* soit utiliser des méthodes natives, écrites en Javascript;
-* soit utiliser une librairie nous facilitant la manipulation. La plus connue aujourd'hui est [JQuery](https://jquery.com/).
-
-Nous allons prendre ce deuxième choix.
-
-Pour mieux comprendre, voici un exemple de code en Javascript qui manipule le DOM
-
-```js
-const login = document.getElementById('login');
-const loginMenu = document.getElementById('loginMenu');
-
-login.addEventListener('click', () => {
-  if(loginMenu.style.display === 'none'){
-    loginMenu.style.display = 'inline';
-  } else {
-    loginMenu.style.display = 'none';
-  }
-});
-```
-
-Et voici son équivalent en Jquery :
-
-```js
-$('#login').click(() => {
-  $('#loginMenu').toggle()
-});
-
-```
-
-Pas besoin de comprendre ce code pour le moment ( c'est le but du cours ), en une phrase il fait : 
-'Quand je clique sur la div dont l'id est `login` alors j'affiche la div dont l'id est est `loginmenu`' (et je la cache au click suivant).
-
-
-JQuery va nous permettre de faire des choses extraordinaires, pour en avoir un aperçu faites la première partie du cours ( en Français ! ) [jquery](https://www.codecademy.com/fr/tracks/jquery) de codecademy.
-
-**Remarque 1**: il existe deux cours Jquery sur codecademy, soyez vigilants à prendre celui indiqué.
-
-**Remarque 2**: Les 4 premiers exercices sont assez guidés et permettent d'aborder les notions séparement. Les suivants, un peu moins et utilisent plusieurs notions à la fois. Les quatre premiers sont à réaliser en autonomie, prenez le temps de chercher, ce n'est pas une course, chacun son rythme.
-
 ## Exercice 1 : Au commencement
 
 Rendez vous à l'intérieur du répertoire exo-1.
