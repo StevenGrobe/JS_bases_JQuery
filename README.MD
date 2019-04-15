@@ -54,7 +54,7 @@ Le répertoire 3 présente une page de site d'un portfolio. Ce portfolio est tr�
 8. vous venez de réaliser un nouveau projet et vous souhaitez le mettre sur votre portfolio. De plus, comme c'est le dernier, vous souhaitez qu'il apparaisse au dessus des autres et qu'il soit plus grand pour être mis en valeur. Choisissez une image et un texte et ajoutez le au-dessous de "Some of my work". Ajustez la taille de l'image pour être de 250px de haut;
 9. la classe intro a été définie dans le fichier 'index.css'. Ajoutez cette classe au footer afin de changer l'affichage en rouge.
 
-## Exercice 4 : Actions --> Réactions
+## Exercice 4 : Actions ➡️ Réactions
 
 Maintenant que nous savons sélectionné puis manipulé le DOM, il nous reste un élément fondamental à voir : comment réagir à des événements utilisateurs ? Par exemple :
 
@@ -133,16 +133,21 @@ Dans le fichier script.js, vous avez une fonction getData qui vous retourne le t
 
 **Bingo 2**: Ajoutez un bouton pour pouvoir faire un export CSV de votre tableau.
 
-## Exercice 8: Bienvenue dans le monde fabuleux des plugins jQuery
+## Exercice 8 : Bienvenue dans le monde fabuleux des plugins jQuery
 
-jQuery étant une librarie extrêmement utilisée, un écosystème de plugins que vous pouvez utiliser existe.
+jQuery étant une librarie extrêmement utilisée, un écosystème de plugins que vous pouvez utiliser existe. Chaque plugin a sa propre documentation, qu'il faut visiter pour découvrir comment l'utiliser.
+
+Le chargement de plugins jQuery se fait en tout cas toujours de la même façon : on télécharge le plugin sous forme de fichier .js à minima, puis on l'intègre dans sa page en respectant l'ordre :
+- Chargement de la librairie jQuery
+- Chargment du plugin jQuery
+- Chargement de notre script, qui contient les appels au plugins
+
 L'objectif de cette partie est d'utiliser à mimima un plugin jQuery, vous pouvez trouver la liste [ici](https://www.npmjs.com/browse/keyword/jquery-plugin) ou [là](https://plugins.jquery.com/).
 
-Exemple de plugins :
-
-- diaporama de photos;
-- slider en Javascript;
-- gestion de formulaire;
+Exemples de plugins :
+- diaporama de photos
+- slider en Javascript
+- gestion de formulaire
 - menu
 - ...
 
