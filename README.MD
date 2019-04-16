@@ -175,7 +175,7 @@ Reproduire [le comportement simple de Bootstrap Collapse avec un `href`](https:/
 Reproduire [le comportement de fermeture de Bootstrap Alert avec un bouton Close](https://getbootstrap.com/docs/4.3/components/alerts/#dismissing).
 
 ### Bootstrap Dropdown
-Reproduire [le comportement d'affichage du Bootstrap Dropdown avec un `href`](https://getbootstrap.com/docs/4.3/components/collapse/#example)
+Reproduire [le comportement d'affichage du Bootstrap Dropdown](https://getbootstrap.com/docs/4.3/components/dropdowns/#single-button)
 
 ### Affix
 Dans la page, faire que toute la section "Your cart" reste fixée en haut de la fenêtre quand le scroll dépasse cette section.
