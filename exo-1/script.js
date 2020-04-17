@@ -1,1 +1,4 @@
-console.log('exercice 1');
+console.log('----------');
+console.log('Exercice 1');
+console.log('----------');
+
