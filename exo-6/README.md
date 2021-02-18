@@ -8,7 +8,7 @@
 
 Nous allons maintenant ajouter des contrôles :
 
-1. vérifiez que le champ email est non vide. Si ce n'est pas le cas, afficher une div avec les classes bootstrap [`alert alert-warning`](https://www.w3schools.com/bootstrap/bootstrap_alerts.asp) en précisant dedans le texte email obligatoire
+1. vérifiez que le champ email est non vide. Si ce n'est pas le cas, afficher une div avec les classes bootstrap [`alert alert-warning`](https://getbootstrap.com/docs/3.4/components/#alerts) en précisant dedans le texte email obligatoire
 2. vérifiez la même chose pour le champ mot de passe
 3. ajoutez un contrôle supplémentaire sur le champ mot de passe pour obliger l'utilisateur à rentrer au minimum 6 lettres. Ajustez le message en fonction
 4. vérifiez maintenant que le champ email comporte bien une adresse email, sinon afficher un message à l'utilisateur. Remarque : il va falloir trouver comment vérifier qu'une chaine de charactères est un email... le moteur de recherche est votre ami...
