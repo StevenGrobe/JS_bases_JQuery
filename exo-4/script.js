@@ -5,8 +5,8 @@ $(document).ready(function () {
         let email = $('input').val();
         alert(`Merci ${ email } nous vous tiendrons informé des différentes offres`);
     });
-    $('#myNavbar li:nth-child(2)').dblclick(function() {
-        $('#myNavbar li:nth-child(2)').hide()
+    $('#myNavbar :first-child :last-child a').dblclick(function() {
+        $('#myNavbar :first-child :last-child a').hide()
         console.log('dblclick & hide')
     });
 
