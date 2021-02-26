@@ -10,7 +10,7 @@ $(document).ready(function () {
     $('h1').text('Steven')
     $('#tagline').text("J'apprends JS")
     $('#myNavbar ul:first').remove();
-    $('.glyphicon').removeClass('glyphicon glyphicon-log-in').addClass('bi bi-arrow-bar-left');
+    $('.glyphicon').addClass('bi bi-arrow-bar-left').removeClass('glyphicon glyphicon-log-in');
     $('footer p').html('<b>Copyright 2021</b>');
     $('div h3').text('Mes projets')
     $('.container-fluid .col-sm-3 p').text('Mon projet');

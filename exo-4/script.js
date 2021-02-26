@@ -1,1 +1,38 @@
 console.log("exercice 4");
+
+$(document).ready(function () {
+    $('.btn').on('click', function() {
+        let email = $('input').val();
+        alert(`Merci ${ email } nous vous tiendrons informé des différentes offres`);
+    });
+    $('#myNavbar li:nth-child(2)').dblclick(function() {
+        $('#myNavbar li:nth-child(2)').hide()
+        console.log('dblclick & hide')
+    });
+
+    let count = 0
+    $('img').on( 'click', function() {
+        console.log('count');
+        count += 1;
+        $('.glyphicon-shopping-cart').text('('+count+')')
+    });
+    $('#myNavbar :last-child :last-child a').on( 'click', function() {
+        console.log('cart')
+    });
+
+    let watchPicture = false;
+    $('img').mouseover(function (img) {
+    watchPicture = true;
+    console.log("mouse on " + img.target.id);
+    })
+
+    $(".form-control").on('click', function () {
+        console.log('input click')
+    });
+
+    $(".form-control").on('input', function () {
+        let email = $('input').val();
+        console.log("user : "+email)
+    });
+    
+});
