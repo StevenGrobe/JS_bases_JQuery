@@ -2,7 +2,12 @@ console.log("exercice 6");
 
 // Verifie que la chaine de charactère est bien un email
 function isEmail(email) {
-    var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+    var regex = /^(([a-zA-Z0-9_.+-])+\@([a-zA-Z0-9-])+\.([a-zA-Z0-9]{2,4}))+$/; // regex sert à vérifier des chaines de caracteres spécial (email, num sécu, num siret etc etc)
+    // /^ début de ligne
+    // [a-zA-Z0-9_.+-] = 1er groupe  de chaine de caractere
+    // \@ [a-zA-Z0-9-] = Après le @ 2nd groupe
+    // \. [a-zA-Z0-9] {2,4} = Après le . 3eme groupe, avec une longueur comprise entre 2 et 4
+    // $/ fin de ligne
     return regex.test(email);
 }
 
