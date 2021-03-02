@@ -10,10 +10,10 @@ $("#subBtn").click(function () {
     // Verification Email
     if (!$('#mail').val()) { // On vérifie la valeur de l'id mail
         $("#mailAlert").fadeIn(); // Montre l'alerte
-        $("#mailAlert").text("email obligatoire"); // Affiche alerte en ajoutant du texte à id mailAlert
+        $("#mailAlert").text("Email obligatoire"); // Affiche alerte en ajoutant du texte à id mailAlert
     } else if (!isEmail($('#mail').val())) { // Vérification regex
         $("#mailAlert").fadeIn();
-        $("#mailAlert").text("Veuillez entrer un email valide!");
+        $("#mailAlert").text("Veuillez entrer un email valide");
     } else {
         $("#mailAlert").fadeOut(); // Cache l'alerte
     }
@@ -34,6 +34,3 @@ $("#subBtn").click(function () {
         console.log("vous etes connecté!")
     } 
 });
-
-console.log($('#mail').val());
-console.log($("#mdp").val());

@@ -2,7 +2,7 @@ console.log("exercice 4");
 
 $(document).ready(function () {
     $('.btn').on('click', function() {
-        let email = $('input').val();
+        let email = $('input').val(); 
         alert(`Merci ${ email } nous vous tiendrons informé des différentes offres`);
     });
     $('#myNavbar :first-child :last-child a').dblclick(function() {
@@ -26,7 +26,7 @@ $(document).ready(function () {
     console.log("mouse on " + img.target.id);
     })
 
-    $(".form-control").on('click', function () {
+    $(".form-control").on('focus', function () {
         console.log('input click')
     });
 
